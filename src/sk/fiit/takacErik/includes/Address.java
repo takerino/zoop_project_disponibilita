@@ -1,11 +1,10 @@
-package sk.fiit.takacErik.parts;
+package sk.fiit.takacErik.includes;
 
 public class Address {
-    private String country;
-    private String city;
-    private String street;
-    private int number;
-
+    private final String country;
+    private final String city;
+    private final String street;
+    private final int number;
 
     public Address(String country, String city, String street, int number){
         this.country = country;

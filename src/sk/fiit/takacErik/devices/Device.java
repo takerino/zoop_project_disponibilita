@@ -1,20 +1,17 @@
 package sk.fiit.takacErik.devices;
 
-public class Device {
+public interface Device {
 
-    private String vendor;
-    private String type;
+    public String description = "Some device";
+    public String vendor = "None";
+    public String type = "None";
 
-    public Device(String vendor, String type){
-        this.type = type;
-        this.vendor = vendor;
-    }
+    public String getDescription();
+    public String getType();
+    public String getVendor();
 
-    public String getType() {
-        return type;
-    }
+    public void finalize() throws Throwable;
 
-    public String getVendor() {
-        return vendor;
-    }
+    public void removeMe();
+
 }

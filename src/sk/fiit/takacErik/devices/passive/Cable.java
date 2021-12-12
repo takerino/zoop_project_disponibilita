@@ -1,10 +1,9 @@
-package sk.fiit.takacErik.devices.active;
+package sk.fiit.takacErik.devices.passive;
 
 import sk.fiit.takacErik.devices.Device;
 
-public class Switch implements Device {
-
-    private final String description = "Switch";
+public class Cable implements Device {
+    private final String description = "Cable";
 
     @Override
     public String getDescription() {
@@ -22,8 +21,8 @@ public class Switch implements Device {
     }
 
     @Override
-    public void finalize() {
-        System.out.println("Device deleted");
+    public void finalize(){
+        ;//System.out.println("Device deleted");
     }
 
     @Override
